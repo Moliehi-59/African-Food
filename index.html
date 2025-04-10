@@ -1,98 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discover Africa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      background-image: url(african_sunset_2-wallpaper-1920x1080.jpg);
-      background-size: cover;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Cusine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(food-4k-m37wpodzrcbv5gvw.jpg);
+            background-position: center;
+            background-size: cover;
+             
+        }
+        header {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: black;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            transition: 0.5s;
+            cursor: pointer;
+            color: white;
+            font-family: cursive;
+        }
+        .menu-item:hover{
+            font-size: 30px;
+            transition: 0.5s;
+        }
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid pink;
+        }
+        .contact-form button {
+            background-color:grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .one{
+            background-image: url(TAL-sunset-afrian-landscape-ALISTBJORN1125-ba67aaeeb47e4f62a7c724b7a090d5ea.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 100px;
+            font-size: 20px;
+            border-radius: 20px;
+            margin-right: 150px;
+            margin-left: 130px;
+            transition: 0.5s;
+        }
+        .one:hover{
+            transition: 0.5s;
+            font-size: 30px;
 
-    header {
-      background-color: #008080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        }
+        .two{
+            background-image: url(1584ortelius.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 100px;
+            font-size: 20px;
+            border-radius: 20px;
+            margin-right: 150px;
+            transition: 0.5s;
+            
+        }
+        .two:hover{
 
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+            transition: 0.5;
+            font-size: 30px;
+        }
+        .three{
+            background-image: url(istockphoto-1198469951-612x612.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 100px;
+            font-size: 20px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .three:hover{
+            transition: 0.5s;
+            font-size: 30px;
 
-    h1, h2 {
-      color: #00695c;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    .country {
-      background-color: #fff;
-      padding: 15px;
-      margin-top: 15px;
-      border-left: 4px solid #008080;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-  </style>
+        }
+        .under{
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: 400px;
+}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Africa</h1>
-    <p>Explore the diverse and vibrant continent</p>
-  </header>
-  <main>
-    <section>
-      <h2>About Africa</h2>
-      <p style="color: white;">
-        Africa is the second-largest and second-most-populous continent on Earth. It is rich in cultural heritage, diverse
-        ecosystems, vast natural resources, and a history that dates back to the earliest human civilizations. From the
-        Sahara Desert in the north to the lush rainforests of the Congo Basin and the savannas of the Serengeti,
-        Africa's landscapes are as varied as its people.
-      </p>
-      <p style="color: white;">
-        The continent is home to 54 recognized countries, each with its own unique traditions, languages, and histories.
-        Africa is a land of both ancient kingdoms and rapidly developing economies, making it a dynamic and exciting
-        region of the world.
-      </p>
-    </section>
 
-    <section>
-      <h2>Countries of Africa</h2>
+<header>
+    <h1>African Cusine
+        <p class="under">where cultulre meets flavour</p><br>
+    </h1>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <div class="country">
-        <h3>Nigeria</h3>
-        <p>Nigeria is the most populous country in Africa and is known for its vibrant culture, music, and Nollywood film industry. Lagos is a major economic hub.</p>
-      </div>
+<section id="menu">
+    <h2 style="font-size: 30px;">Our Menu</h2>
+    <div class="menu-item">
+        <span>Bunny chow</span>
+        <span>Rs200</span>
+    </div>
+    <div class="menu-item">
+        <span>Boerewors</span>
+        <span>Rs250</span>
+    </div>
+    <div class="menu-item">
+        <span>Jollof Rice</span>
+        <span>Rs150</span>
+    </div>
+    <div class="menu-item">
+        <span>Fufu</span>
+        <span>Rs200</span>
+    </div>  
 
-      <div class="country">
-        <h3>Egypt</h3>
-        <p>Located in North Africa, Egypt is famous for its ancient civilization and iconic monuments such as the Pyramids and the Sphinx. The Nile River is central to life in Egypt.</p>
-      </div>
+        <div class="menu-item">
+            <span>Paap</span>
+            <span>Rs100</span>
 
-      <div class="country">
-        <h3>South Africa</h3>
-        <p>South Africa is known for its incredible biodiversity, modern cities like Cape Town and Johannesburg, and historical significance in the fight against apartheid.</p>
-      </div>
+        </div>
+</section>
+<br>
 
-      <div class="country">
-        <h3>Kenya</h3>
-        <p>Located in East Africa, Kenya is renowned for its wildlife safaris, the Great Rift Valley, and Mount Kenya. Nairobi is the capital and a major economic center.</p>
-      </div>
+<section id="menu">
+    <h2 style="font-size: 30px;">Our Drinks</h2>
+    <div class="menu-item">
+        <span>Maheu</span>
+        <span>Rs70</span>
+    </div>
+    <div class="menu-item">
+        <span>Wild berry milkshake</span>
+        <span>Rs100</span>
+    </div>
+    <div class="menu-item">
+        <span>Milk rice drink</span>
+        <span>Rs70</span>
+    </div>
+    <div class="menu-item">
+        <span>Lesheleshele</span>
+        <span>Rs200</span>
+    </div>  
 
-      <div class="country">
-        <h3>Ghana</h3>
-        <p>Ghana, in West Africa, has a rich history including the Ashanti Empire. It is known for its beaches, national parks, and cultural festivals.</p>
-      </div>
-    </section>
-  </main>
+        <div class="menu-item">
+            <span>Motoho</span>
+            <span>Rs100</span>
+
+        </div>
+</section>
+
+<section id="about">
+    <h2 style="font-size: 30px;">About Us</h2>
+    <p style="color: white; font-family: cursive;">
+        Welcome to African Cuisines: A Journey Through the Rich Flavors of Africa
+
+Step into African Cuisines, where every meal is more than just food – it’s an experience. 
+Nestled in the heart of the city, our restaurant brings the vibrant, soulful flavors of Africa directly
+ to your table. From the moment you walk through our doors,
+ you’re greeted with the warmth and hospitality that is deeply embedded in African culture. Our friendly 
+ and attentive staff make sure you feel right at home, offering not only great service but also a glimpse
+  into the spirit of African community and tradition.
+
+At African Cuisines, we believe that food is a powerful connector. It tells the story of the people, history
+, and culture of Africa. Our menu celebrates the diversity of the continent, offering a wide range of dishes
+ inspired by the various regions of Africa. Whether you're a fan of the savory stews of West Africa, the spicy
+  flavors of North Africa, or the comforting grains and vegetables of Southern Africa, there is something here 
+  for every palate.
+
+The extensive menu features carefully crafted recipes passed down through generations, prepared with fresh 
+ingredients and authentic spices that transport you straight to the heart of Africa. From the popular jollof 
+rice and tender goat meat from Nigeria to the flavorful tagines of Morocco, and the fragrant bunny chow from
+South Africa, every dish tells its own unique story. You’ll find an array of vegetarian, vegan, and gluten-free 
+options as well, ensuring that everyone can indulge in the flavors of the continent.
+
+Our commitment to excellence doesn’t end with the food. African Cuisines is not just a place to eat, it’s a place
+ to celebrate and connect with friends, family, and the community. Whether you’re here for a casual dinner, a special
+  occasion, or just to explore the flavors of Africa, our warm hospitality and diverse offerings will leave you feeling 
+  like part of our extended family.
+
+Come experience:
+<ol style="color: white; font-family: cursive;">
+    <li>Spicy Peanut Stew</li>
+    <li>Bitterleaf Soup</li>
+    <li>Cassava dishes</li>
+    <li>Hibiscus tea</li>
+    <li>Baobab Juice</li>
+</ol>
+    </p>
+
+</section>
+<br><br><br><br><br><br>
+
+<form>
+    <a class="one" href="africa.html">Africa</a>
+    <a class="two" href="origin.html" target="_blank">Origins</a>
+    <a class="three" href="mission.html">Misson</a>
+</form><br><br><br><br><br><br>
+
+
+
+<section id="contact">
+    <h2 style="font-size: 30px;">Contact Us</h2>
+    <div class="contact-form">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Restaurant Name. All Rights Reserved.</p>
+</footer>
+<br><br><br><br><br><br><br><br>
+
 </body>
 </html>
