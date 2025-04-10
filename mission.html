@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taste of Africa - Our Mission</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefce8;
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+    }
+    header {
+      background-color: #f59e0b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #b45309;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #f59e0b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d97706;
+    }
+    #feedback-message {
+      margin-top: 10px;
+      font-weight: 600;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taste of Africa</h1>
+    <p>Experience the heart of African cuisine and hospitality</p>
+  </header>
+  <div class="container">
+    <h2>Our Mission</h2>
+    <p>
+      At Taste of Africa, our mission is to share the vibrant flavors and rich cultural traditions of African cuisine with the world. We believe that food is more than just nourishment — it's a story, a celebration, and a connection to our roots. 
+    </p>
+    <p>
+      We are committed to using fresh, locally-sourced ingredients and authentic African spices to deliver a taste that is as genuine as it is unforgettable. From West African jollof rice to East African injera, every dish is crafted with love and heritage.
+    </p>
+
+    <h2>Excellence in Service</h2>
+    <p>
+      At the heart of our restaurant is a passion for hospitality. Our friendly and attentive staff strive to provide a welcoming atmosphere where every guest feels like family. Whether you're dining in or taking out, we aim to deliver outstanding service that complements our flavorful meals.
+    </p>
+
+    <h2>We Value Your Feedback</h2>
+    <form id="feedback-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Feedback</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+      <div id="feedback-message"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('feedback-form');
+    const messageBox = document.getElementById('feedback-message');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        messageBox.textContent = 'Thank you for your feedback, ' + name + '!';
+        form.reset();
+      } else {
+        messageBox.textContent = 'Please fill out all fields.';
+        messageBox.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>
